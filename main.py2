@@ -1,1 +1,15 @@
+import random
 
+caracteres_de_senha = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+tamanho_da_senha = int(input("Digite o tamanho desejado de sua senha : "))
+
+senha = ""
+
+for i in range(tamanho_da_senha):
+
+    caracteres_de_senha_sorteado = random.choice(caracteres_de_senha)
+
+    senha = senha + caracteres_de_senha_sorteado
+
+print("Sua senha segura é " + senha)
